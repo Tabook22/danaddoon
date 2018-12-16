@@ -1,0 +1,25 @@
+
+#header{
+    height:50px;
+    background-color:white;
+}
+#branding h1 {
+    color:black;
+}
+#user-tools{
+    color:black;
+}
+#user-tools a:link{
+    color:blue;
+}
+#user-tools a:visited{
+    color:green;
+}
+
+a:link,
+a:visited {
+    color:Blue;
+}
+div.breadcrumbs{
+    background-color:gray;
+}

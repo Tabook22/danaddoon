@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'tutorials.apps.TutorialsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'danaddoon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddoondb',
+        'USER':'postgres',
+        'PASSWORD':'Goo@allmona_22',
+        'HOST':'localhost'
     }
 }
 
@@ -120,7 +123,9 @@ USE_TZ = True
 
 STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICTFILES_DIRS=[
-    os.path.join(BASE_DIR,'danaddoon/static')
-]
+ROOT_PATH = os.path.dirname(__file__)
+STATICFILES_DIRS = [os.path.join(ROOT_PATH, 'static')]
 
+# Media Folder Settings
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+MEDIA_URL='/media/'
