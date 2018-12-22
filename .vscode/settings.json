@@ -1,4 +1,6 @@
 {
     "python.pythonPath": "venv/bin/python",
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/61351369-ed84-48b1-bae4-34c7db5123bd/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/danaddoon-azure-web",
+    "appService.deploySubpath": ""
 }
