@@ -1,18 +1,44 @@
-body{
-    padding-top:70px;
+body {
+  padding-top: 70px;
 }
 /*Header logo */
-.logo-img{
-    height:40px !important;
-    padding:0 10px;
+.logo-img {
+  height: 40px !important;
+  padding: 0 10px;
 }
 
 /* content wrapper */
-.content-wrapper{
-    min-height:600px;
+.content-wrapper {
+  min-height: 600px;
 }
 /* footer */
-.footer-contents{
-    background-color:black;
-    height:70px;
+.footer-contents {
+  background-color: black;
+  height: 70px;
+}
+
+.post-img {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+.short-desc {
+  clear: right;
+  clear: lef;
+  height: 10rem;
+  float: left;
+  width: 65rem;
+  padding-right: 20px;
+}
+tut-content {
+  min-height: 200px;
+}
+.tut-content h2 {
+  padding: 0;
+  margin: 20px 0 0 0;
+  font-size: 2rem;
+}
+.tut-content hr {
+  padding: 0;
+  margin: 5px 0;
 }

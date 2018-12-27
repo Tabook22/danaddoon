@@ -1,0 +1,16 @@
+astroid==2.1.0
+autopep8==1.4.3
+certifi==2018.10.15
+GDAL==2.3.1
+isort==4.3.4
+lazy-object-proxy==1.3.1
+mccabe==0.6.1
+nose==1.3.7
+numpy==1.15.4
+pipenv==2018.10.13
+pycodestyle==2.4.0
+pylint==2.2.2
+six==1.11.0
+virtualenv==16.1.0
+virtualenv-clone==0.4.0
+wrapt==1.10.11

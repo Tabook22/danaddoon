@@ -1,5 +1,32 @@
 {% extends 'base.html' %}
 
+{% load humanize %}
 {% block content %}
-<div cla
+<div class="tlst">
+<h1>This is a list of Tutorals</h1>
+<div class="tut-wrapper">
+
+
+{% if tutorials %}
+    {% for tut in tutorials %}
+<div class="tut-content">
+        <h2>{{tut.title}}</h2>
+        <hr>
+        <img class="post-img" src="{{ tut.photo_main.url}}">
+        
+        <p class="short-desc">
+        {{ tut.s_desc}}
+        </p>
+</div>
+    {% endfor %}
+{% else %}
+    <div class="no-lst">
+        <p>No Tutorials avaialbe </p>
+    </div>
+
+{% endif %}
+
+</div>
+
+</div>
 {% endblock %}
